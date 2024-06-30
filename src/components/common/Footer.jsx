@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-primary py-4 text-white px-4 lg:px-6">
-      <div className="container mx-auto flex justify-between px-4 lg:px-0">
+    <div className="bg-primary py-4 text-white">
+      <div className="container mx-auto flex justify-between px-4 lg:px-6">
         <p className="text-center text-sm text-white">All rigths reserved.</p>
         <div className="flex gap-5">
           <Link to="https://github.com/rifat-hassan-nibir" target="_blank">
