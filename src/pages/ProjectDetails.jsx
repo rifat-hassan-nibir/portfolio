@@ -5,22 +5,21 @@ import { MdArrowOutward } from "react-icons/md";
 const ProjectDetails = () => {
   const { projectId } = useParams();
   const project = projects.find((p) => p.id === projectId);
-  console.log(project);
 
   if (!project) {
-    return <div className="container mx-auto px-4 lg:px-0 my-12 lg:my-14 text-center">Project not found</div>;
+    return <div className="my-12 lg:my-14 text-center">Project not found</div>;
   }
 
   return (
-    <div className="container mx-auto px-4 lg:px-0 py-12 lg:py-14">
+    <div className="py-12 lg:py-14">
       <div className="bg-primary px-6 py-8 lg:p-12 text-white rounded-lg overflow-hidden shadow-lg flex flex-col lg:flex-row gap-10 lg:gap-16">
         <div className="lg:w-1/2">
           <div>
-            <h2 className="font-bold text-3xl lg:text-4xl mb-4 lg:mb-6">{project.title}</h2>
-            <p className="text-gray-300 text-lg mb-6">{project.description}</p>
+            <h2 className="font-bold text-2xl lg:text-3xl mb-4 lg:mb-6">{project.title}</h2>
+            <p className="text-gray-300 text-base mb-6">{project.description}</p>
           </div>
           <div className="pt-4 lg:pt-6">
-            <h3 className="font-bold text-xl lg:text-2xl mb-4">Technologies Used</h3>
+            <h3 className="font-semibold text-xl lg:text-2xl mb-4">Technologies Used</h3>
             <div className="pt-1 lg:pt-2">
               {project.technologies.map((tech, index) => (
                 <span
