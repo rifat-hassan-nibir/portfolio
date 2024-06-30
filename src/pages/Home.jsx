@@ -25,7 +25,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-5 max-w-3xl text-center mx-auto"
           >
-            <p className="lg:text-lg text-sm text-gray-600 max-w-xl">
+            <p className="lg:text-lg text-base text-gray-600 max-w-xl">
               A Frontend Developer driven by the challenge of converting complex ideas into elegant code.
             </p>
           </motion.div>

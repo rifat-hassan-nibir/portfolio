@@ -20,16 +20,12 @@ const ProjectDetails = () => {
           </div>
           <div className="pt-4 lg:pt-6">
             <h3 className="font-semibold text-xl lg:text-2xl mb-4">Technologies Used</h3>
-            <div className="pt-1 lg:pt-2">
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 lg:mr-4 mb-4 lg:mb-4"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+
+            {project.technologies.map((tech, index) => (
+              <div key={index} className="inline-block mr-2 mt-2 bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-800">
+                {tech}
+              </div>
+            ))}
 
             {/* Live Preview */}
             <div className="flex items-center mt-8">
