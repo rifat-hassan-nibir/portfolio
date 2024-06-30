@@ -20,7 +20,7 @@ const links = [
 const Navbar = () => {
   return (
     <div className="bg-primary">
-      <div className="navbar container mx-auto px-4 lg:px-0">
+      <div className="navbar container mx-auto px-4 lg:px-6">
         <div className="navbar-start">
           <Link to="/">
             <img src={logo} className="size-8" alt="Rifat Hassan" />
