@@ -11,8 +11,8 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="py-12 lg:py-14">
-      <div className="bg-primary px-6 py-8 lg:p-12 text-white rounded-lg overflow-hidden shadow-lg flex flex-col lg:flex-row gap-10 lg:gap-16">
+    <div className="py-10 lg:py-14">
+      <div className="bg-primary px-4 py-6 lg:p-12 text-white rounded-lg overflow-hidden shadow-lg flex flex-col lg:flex-row gap-10 lg:gap-16">
         <div className="lg:w-1/2">
           <div>
             <h2 className="font-bold text-2xl lg:text-3xl mb-4 lg:mb-6">{project.title}</h2>
@@ -43,7 +43,7 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 h-[600px] overflow-y-scroll rounded-lg">
+        <div className="lg:w-1/2 max-h-[600px] overflow-y-scroll rounded-lg">
           <img className="w-full rounded-lg" src={project.image} alt={project.title} />
         </div>
       </div>
