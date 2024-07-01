@@ -39,7 +39,7 @@ const Home = () => {
           >
             <a
               className="inline-flex justify-center items-center shadow-lg gap-x-3 text-center bg-black/90 hover:bg-white border border-primary hover:text-black text-white transition-all duration-300 text-sm font-medium rounded-full py-3 px-6"
-              href="/Rifat-Hassan-Resume.pdf"
+              href="/Rifat Hassan Resume.pdf"
               download="Rifat Hassan Resume.pdf"
             >
               <MdOutlineFileDownload className="size-5" />

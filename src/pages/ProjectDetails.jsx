@@ -31,6 +31,7 @@ const ProjectDetails = () => {
             <div className="flex items-center mt-8">
               <Link
                 to={project.link}
+                target="_blank"
                 className="bg-white border border-white text-black font-bold py-2 px-6 hover:bg-primary hover:text-white transition-all duration-300 hover:border rounded-full flex items-center"
               >
                 Live Preview

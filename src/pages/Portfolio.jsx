@@ -25,7 +25,7 @@ const Portfolio = () => {
             key={project.id}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: index * 0.3 }}
+            transition={{ duration: 0.5, delay: 0.5 + index * 0.3 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex"
