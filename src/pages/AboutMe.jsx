@@ -31,14 +31,21 @@ const AboutMe = () => {
 
       <Gap />
 
+      {/* Skills Section */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5, delay: 0.9 }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.9 }}
       >
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.9 + 0.3 * index }}
+            key={index}
+            className="flex flex-col items-center"
+          >
             <div className="text-4xl mb-3">{skill.icon}</div>
             <h3 className="text-lg font-semibold text-gray-800">{skill.name}</h3>
             <p className="text-sm text-gray-600 mb-2">{skill.level}</p>
@@ -48,7 +55,7 @@ const AboutMe = () => {
                 style={{ width: skill.level === "Expert" ? "90%" : skill.level === "Advanced" ? "75%" : "60%" }}
               ></div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>

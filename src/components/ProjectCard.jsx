@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProjectCard = ({ id, image, title, description, technologies }) => {
   return (
     <Link to={`/portfolio/project-details/${id}`} className="flex flex-col h-full">
-      <div className="flex flex-col justify-between h-full py-1 rounded-lg overflow-hidden shadow-lg bg-primary text-white hover:scale-[103%] transition-all duration-300">
+      <div className="flex flex-col justify-between h-full py-1 rounded-lg overflow-hidden shadow-lg bg-primary text-white">
         <div className="p-4 lg:p-5 flex-grow">
           <div className="h-[200px] overflow-hidden">
             <img className="w-full object-cover" src={image} alt={title} />
