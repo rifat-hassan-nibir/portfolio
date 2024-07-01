@@ -7,7 +7,7 @@ import SectionHeading from "../components/utils/SectionHeading";
 const Portfolio = () => {
   return (
     <div className="py-10 lg:py-14">
-      <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+      <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
         <SectionHeading text={"Projects"} />
       </motion.div>
 
@@ -15,7 +15,7 @@ const Portfolio = () => {
 
       {/* Projects */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
+        initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -23,11 +23,9 @@ const Portfolio = () => {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 + index * 0.3 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.5, delay: 0.5 + index * 0.2 }}
             className="flex"
           >
             <ProjectCard

@@ -9,7 +9,7 @@ const Home = () => {
         <div className="max-w-[85rem] mx-auto px-4">
           {/* Title  */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className="text-center mx-auto"
@@ -20,9 +20,9 @@ const Home = () => {
           {/* End Title  */}
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-5 max-w-3xl text-center mx-auto"
           >
             <p className="text-base text-gray-600 max-w-xl">
@@ -32,13 +32,13 @@ const Home = () => {
 
           {/* Buttons  */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-8 gap-3 flex justify-center items-center"
           >
             <a
-              className="inline-flex justify-center items-center shadow-lg gap-x-3 text-center bg-black/90 hover:bg-white border border-primary hover:text-black text-white transition-all duration-300 text-sm font-medium rounded-full py-3 px-6"
+              className="inline-flex justify-center items-center shadow-lg gap-x-3 text-center bg-primary hover:bg-white border border-primary hover:text-black text-white transition-all duration-300 text-sm font-medium rounded-full py-3 px-6"
               href="/Rifat Hassan Resume.pdf"
               download="Rifat Hassan Resume.pdf"
             >
