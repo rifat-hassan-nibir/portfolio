@@ -7,7 +7,7 @@ const ProjectDetails = () => {
   const project = projects.find((p) => p.id === projectId);
 
   if (!project) {
-    return <div className="my-12 lg:my-14 text-center">Project not found</div>;
+    return <div className="my-10 lg:my-14 text-center">Project not found</div>;
   }
 
   return (

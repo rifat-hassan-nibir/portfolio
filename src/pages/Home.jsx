@@ -14,8 +14,8 @@ const Home = () => {
             transition={{ duration: 0.5 }}
             className="text-center mx-auto"
           >
-            <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl">Welcome!</h1>
-            <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl">I am Rifat Hassan</h1>
+            <h1 className="block font-bold text-gray-800 text-4xl lg:text-5xl">Welcome!</h1>
+            <h1 className="block font-bold text-gray-800 text-4xl lg:text-5xl">I am Rifat Hassan</h1>
           </motion.div>
           {/* End Title  */}
 
@@ -25,7 +25,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-5 max-w-3xl text-center mx-auto"
           >
-            <p className="lg:text-lg text-base text-gray-600 max-w-xl">
+            <p className="text-base text-gray-600 max-w-xl">
               A Frontend Developer driven by the challenge of converting complex ideas into elegant code.
             </p>
           </motion.div>
